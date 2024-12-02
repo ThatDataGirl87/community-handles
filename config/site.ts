@@ -7,7 +7,7 @@ export const siteConfig = {
       href: "/",
     },
     {
-      title: "Members",
+      title: "Directioners",
       href: "/community",
     },
     {
