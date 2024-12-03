@@ -117,7 +117,7 @@ export default async function IndexPage({
           <div className="overflow-hidden rounded-2xl backdrop-blur-sm ">
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left Column */}
-              <div className="space-y-10 bg-popover/20 border-white/10 bg-muted-background p-8 md:border-r">
+              <div className="left-column bg-muted-background space-y-10 border-white/10 bg-popover/20 p-8 md:border-r">
                 <div className="text-center">
                 <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
                     Get your own {domain} <br className="hidden sm:inline" />
@@ -158,7 +158,7 @@ export default async function IndexPage({
               </div>
 
               {/* Right Column */}
-              <div className="bg-popover/20 p-6">
+              <div className="right-column bg-popover/20 p-6">
                 {/* Right column content */}
                 <div>
                   <Stage title="Step 1: Enter Your Current Handle" number={1}>
@@ -190,7 +190,7 @@ export default async function IndexPage({
                             <p className="text-muted-forground mt-4 flex flex-row items-center gap-2 text-sm">
                               <Check className="size-4 text-green-500" /> Account verified successfully.
                             </p>
-                            <Profile profile={profile} className="mt-4 w-1/2 h-auto" />
+                            <Profile profile={profile} className="mt-4 h-auto w-1/2" />
                           </>
                         )}
                       </div>

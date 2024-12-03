@@ -128,11 +128,12 @@
   .header-text {
     font-size: 1.5rem; /* Smaller size for smaller screens */
   }
-}
-
-@media (max-width: 480px) {
-  .header-text {
-    font-size: 1.25rem; /* Even smaller size for very small screens */
+  .left-column {
+    display: none;
+  }
+  .right-column {
+    display: block;
+    width: 100%;
   }
 }
 
