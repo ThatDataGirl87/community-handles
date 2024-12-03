@@ -22,14 +22,14 @@ export function Profile({ profile, className }: Props) {
         <img
           src={profile.banner}
           alt=""
-          className="aspect-[3/1] w-full bg-muted object-cover"
+          className="aspect-[4/1] w-full bg-muted object-cover"
         />
       ) : (
         <div className="aspect-[3/1] w-full bg-muted" />
       )}
       <div className="flex flex-col border-x border-b bg-background px-3 pb-2">
         <Avatar
-          className="relative -top-8 -mb-6 size-16"
+          className="relative -top-8 -mb-6 size16"
           src={profile.avatar}
           alt={`@${profile.handle}'s avatar`}
           fallback={profile.handle.toLocaleUpperCase().at(0)}

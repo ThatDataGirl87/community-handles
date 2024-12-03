@@ -68,6 +68,10 @@
 
     --radius: 0.5rem;
   }
+
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 @layer base {
@@ -78,4 +82,96 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+@layer components {
+  .bg-1d-low-opacity {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url('../public/382879.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+  }
+}
+
+.header-text {
+  font-size: 2rem; /* Default size */
+}
+
+@media (max-width: 768px) {
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+  .p-6 {
+    padding: 1.5rem;
+  }
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  .gap-2 {
+    gap: 0.5rem;
+  }
+  .space-y-6 > * + * {
+    margin-top: 1.5rem;
+  }
+  .space-y-4 > * + * {
+    margin-top: 1rem;
+  }
+  .header-text {
+    font-size: 1.5rem; /* Smaller size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text {
+    font-size: 1.25rem; /* Even smaller size for very small screens */
+  }
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Space between circles */
+  margin-top: 1rem; /* Space above the circles */
+}
+
+.circle {
+  width: 0.8rem; /* Diameter of the circles */
+  height: 0.8rem; /* Diameter of the circles */
+  border-radius: 50%; /* Make the elements circular */
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: rgb(0, 68, 255);
+}
+
+.green {
+  background-color: rgb(7, 190, 7);
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.irish-flag {
+  background-image: url('../public/flag.png'); /* Path to the Irish flag image */
+  background-size: contain; /* Ensure the image covers the entire circle */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 }

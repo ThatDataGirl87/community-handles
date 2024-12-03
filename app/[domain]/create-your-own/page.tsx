@@ -25,7 +25,7 @@ export default function CommunityPage() {
         </h1>
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
           Want a custom community handle for your community, like
-          @alex.swifties.social, @jay.army.social, or @jane.kawaii.social? Follow
+          directioners.social or louies.social? Follow
           these steps to get one.
         </p>
       </div>
@@ -58,16 +58,6 @@ export default function CommunityPage() {
             . It{"'"}s a Next.js project, so you can deploy it however you like.
             Check out the README for the recommended solution, using Vercel and
             Railway.
-          </p>
-          <p className="mt-8 max-w-lg text-sm text-muted-foreground">
-            Using the hosted version? (no longer available){" "}
-            <a
-              href="https://billing.stripe.com/p/login/6oEbJccQOh2Rdji4gg"
-              className="underline"
-            >
-              Go to the billing portal
-            </a>
-            .
           </p>
         </Stage>
       </div>
